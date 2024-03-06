@@ -1,0 +1,734 @@
+{
+    "sourceFile": "css/styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 179,
+            "patches": [
+                {
+                    "date": 1707933909820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707933922484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n html {\n     font-family: \"Poppins\", sans-serif;\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n-    background: var(--red);\n+    background: var(--red) url(/design/mobile-design.jpg);\n }\n \n main {\n     display: flex;\n"
+                },
+                {
+                    "date": 1707933941501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n html {\n     font-family: \"Poppins\", sans-serif;\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n-    background: var(--red) url(/design/mobile-design.jpg);\n+    background: var(--red) url(/images/bg-intro-mobile.png);\n }\n \n main {\n     display: flex;\n"
+                },
+                {
+                    "date": 1707933972925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n     background: var(--red) url(/images/bg-intro-mobile.png);\n }\n-\n+/* \n main {\n     display: flex;\n     justify-content: center;\n     align-items: center;\n@@ -249,5 +249,5 @@\n     .container-form {\n         margin-bottom: 5rem;\n         margin-right: 0;\n     }\n-}\n+} */\n"
+                },
+                {
+                    "date": 1707934001759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n html {\n     font-family: \"Poppins\", sans-serif;\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n-    background: var(--red) url(/images/bg-intro-mobile.png);\n+    background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n }\n /* \n main {\n     display: flex;\n"
+                },
+                {
+                    "date": 1707934770555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,9 +233,9 @@\n         margin: 3rem;\n         padding: 1rem;\n     }\n } */\n-\n+/* \n @media screen and (max-width: 768px) {\n     .container {\n         flex-direction: column;\n         text-align: center;\n"
+                },
+                {
+                    "date": 1707934924563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n }\n-/* \n+/*\n main {\n     display: flex;\n     justify-content: center;\n     align-items: center;\n@@ -233,9 +233,9 @@\n         margin: 3rem;\n         padding: 1rem;\n     }\n } */\n-/* \n+/*\n @media screen and (max-width: 768px) {\n     .container {\n         flex-direction: column;\n         text-align: center;\n"
+                },
+                {
+                    "date": 1707935082385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n     justify-content: center;\n     padding: 2rem;\n }\n \n-.learn {\n+.learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n     line-height: 3.3rem;\n"
+                },
+                {
+                    "date": 1707935109637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,17 @@\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n }\n+\n+.learn-title {\n+    font-size: 3rem;\n+    font-weight: 700;\n+    color: #fff;\n+    line-height: 3.3rem;\n+    padding: 1rem;\n+}\n+\n /*\n main {\n     display: flex;\n     justify-content: center;\n@@ -62,15 +71,8 @@\n     justify-content: center;\n     padding: 2rem;\n }\n \n-.learn-title {\n-    font-size: 3rem;\n-    font-weight: 700;\n-    color: #fff;\n-    line-height: 3.3rem;\n-    padding: 1rem;\n-}\n \n .container-info p {\n     color: var(--white);\n     padding: 1rem;\n"
+                },
+                {
+                    "date": 1707935141627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,14 @@\n     line-height: 3.3rem;\n     padding: 1rem;\n }\n \n+.container-info p {\n+    color: var(--white);\n+    padding: 1rem;\n+    font-weight: 700;\n+}\n+\n /*\n main {\n     display: flex;\n     justify-content: center;\n@@ -71,15 +77,8 @@\n     justify-content: center;\n     padding: 2rem;\n }\n \n-\n-.container-info p {\n-    color: var(--white);\n-    padding: 1rem;\n-    font-weight: 700;\n-}\n-\n .form {\n     background-color: #fff;\n     padding: 1.875rem;\n     border-radius: 0.5rem;\n"
+                },
+                {
+                    "date": 1707935158399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     line-height: 3.3rem;\n     padding: 1rem;\n }\n \n-.container-info p {\n+.intro {\n     color: var(--white);\n     padding: 1rem;\n     font-weight: 700;\n }\n"
+                },
+                {
+                    "date": 1707935205314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,23 @@\n     padding: 1rem;\n     font-weight: 700;\n }\n \n+.price-title {\n+    width: 100%;\n+    font-size: 1rem;\n+    font-weight: 400;\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    display: flex;\n+    align-items: center;\n+    justify-content: center;\n+    background-color: var(--blue);\n+    color: #fff;\n+    padding: 1.125rem;\n+    border-radius: 0.625rem;\n+    margin-bottom: 1.5rem;\n+}\n+\n /*\n main {\n     display: flex;\n     justify-content: center;\n@@ -88,23 +103,8 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-.price {\n-    width: 100%;\n-    font-size: 1rem;\n-    font-weight: 400;\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n-    display: flex;\n-    align-items: center;\n-    justify-content: center;\n-    background-color: var(--blue);\n-    color: #fff;\n-    padding: 1.125rem;\n-    border-radius: 0.625rem;\n-    margin-bottom: 1.5rem;\n-}\n-\n .price span {\n     font-weight: 700;\n     margin-right: 0.25rem;\n }\n"
+                },
+                {
+                    "date": 1707935251026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     display: flex;\n     align-items: center;\n     justify-content: center;\n     background-color: var(--blue);\n-    color: #fff;\n+    color: var(--white);\n     padding: 1.125rem;\n     border-radius: 0.625rem;\n     margin-bottom: 1.5rem;\n }\n"
+                },
+                {
+                    "date": 1707936396487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,14 @@\n     border-radius: 0.625rem;\n     margin-bottom: 1.5rem;\n }\n \n+\n+.price span {\n+    font-weight: 700;\n+    margin-right: 0.25rem;\n+}\n+\n /*\n main {\n     display: flex;\n     justify-content: center;\n@@ -103,13 +109,8 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-.price span {\n-    font-weight: 700;\n-    margin-right: 0.25rem;\n-}\n-\n input[type=\"text\"],\n input[type=\"email\"],\n input[type=\"password\"] {\n     width: calc(100% - 1.125rem);\n"
+                },
+                {
+                    "date": 1707936421376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     margin-bottom: 1.5rem;\n }\n \n \n-.price span {\n+.price-title > span {\n     font-weight: 700;\n     margin-right: 0.25rem;\n }\n \n"
+                },
+                {
+                    "date": 1707936457409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,17 +49,17 @@\n .price-title {\n     width: 100%;\n     font-size: 1rem;\n     font-weight: 400;\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    background-color: var(--blue);\n+    color: var(--white);\n+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n-    background-color: var(--blue);\n-    color: var(--white);\n     padding: 1.125rem;\n     border-radius: 0.625rem;\n-    margin-bottom: 1.5rem;\n+    margin-bottom: 1.5rem; */\n }\n \n \n .price-title > span {\n"
+                },
+                {
+                    "date": 1707936466367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,15 +51,15 @@\n     font-size: 1rem;\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n     padding: 1.125rem;\n     border-radius: 0.625rem;\n-    margin-bottom: 1.5rem; */\n+    margin-bottom: 1.5rem;\n }\n \n \n .price-title > span {\n"
+                },
+                {
+                    "date": 1707936626189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n-    padding: 1.125rem;\n+    padding: 0.928rem;\n     border-radius: 0.625rem;\n     margin-bottom: 1.5rem;\n }\n \n"
+                },
+                {
+                    "date": 1707936789930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n     font-family: \"Poppins\", sans-serif;\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n+    padding: 0 ;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707937011912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     font-family: \"Poppins\", sans-serif;\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n-    padding: 0 ;\n+    padding: 0 1.25rem;\n }\n \n .learn-title {\n     font-size: 3rem;\n@@ -67,8 +67,19 @@\n     font-weight: 700;\n     margin-right: 0.25rem;\n }\n \n+.register-form {\n+    background-color: var(--white);\n+    padding: 1.875rem;\n+    border-radius: 0.5rem;\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    display: flex;\n+    flex-direction: column;\n+    align-items: center;\n+    justify-content: center;\n+}\n+\n /*\n main {\n     display: flex;\n     justify-content: center;\n@@ -99,19 +110,8 @@\n     justify-content: center;\n     padding: 2rem;\n }\n \n-.form {\n-    background-color: #fff;\n-    padding: 1.875rem;\n-    border-radius: 0.5rem;\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n-    display: flex;\n-    flex-direction: column;\n-    align-items: center;\n-    justify-content: center;\n-}\n-\n input[type=\"text\"],\n input[type=\"email\"],\n input[type=\"password\"] {\n     width: calc(100% - 1.125rem);\n"
+                },
+                {
+                    "date": 1707937202776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n     align-items: center;\n     justify-content: center;\n     padding: 0.928rem;\n     border-radius: 0.625rem;\n-    margin-bottom: 1.5rem;\n+    margin-bottom: 1rem;\n }\n \n \n .price-title > span {\n"
+                },
+                {
+                    "date": 1707937265978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n     font-weight: 700;\n     color: #fff;\n     line-height: 3.3rem;\n     padding: 1rem;\n+    margin-bottom: 1rem;\n }\n \n .intro {\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1707937276212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,8 @@\n     font-weight: 700;\n     color: #fff;\n     line-height: 3.3rem;\n     padding: 1rem;\n-    margin-bottom: 1rem;\n }\n \n .intro {\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1707937289650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,14 +38,16 @@\n     font-weight: 700;\n     color: #fff;\n     line-height: 3.3rem;\n     padding: 1rem;\n+    margin-bottom: 1rem;\n }\n \n .intro {\n     color: var(--white);\n     padding: 1rem;\n     font-weight: 700;\n+    margin-bottom: ;\n }\n \n .price-title {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1707937299019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n .intro {\n     color: var(--white);\n     padding: 1rem;\n     font-weight: 700;\n-    margin-bottom: ;\n+    margin-bottom: 4rem;\n }\n \n .price-title {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1707937323346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n     color: #fff;\n     line-height: 3.3rem;\n     padding: 1rem;\n     margin-bottom: 1rem;\n+    text-align: center;\n }\n \n .intro {\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1707937380854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n     color: var(--white);\n     padding: 1rem;\n     font-weight: 700;\n     margin-bottom: 4rem;\n+    text-align: center;\n }\n \n .price-title {\n     width: 100%;\n"
+                },
+                {
+                    "date": 1707937446250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n     color: #fff;\n     line-height: 3.3rem;\n     padding: 1rem;\n     margin-bottom: 1rem;\n+    margin-top: 4rem;\n     text-align: center;\n }\n \n .intro {\n"
+                },
+                {
+                    "date": 1707937560618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n }\n \n .price-title {\n     width: 100%;\n-    font-size: 1rem;\n+    font-size: clamp();\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n"
+                },
+                {
+                    "date": 1707937567347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n }\n \n .price-title {\n     width: 100%;\n-    font-size: clamp();\n+    font-size: clamp(1.5rem, );\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n"
+                },
+                {
+                    "date": 1707937574575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n }\n \n .price-title {\n     width: 100%;\n-    font-size: clamp(1.5rem, );\n+    font-size: clamp(1.5rem, 2.5vw, );\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n"
+                },
+                {
+                    "date": 1707937604485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n }\n \n .price-title {\n     width: 100%;\n-    font-size: clamp(1.5rem, 2.5vw, );\n+    font-size: 1rem;\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n"
+                },
+                {
+                    "date": 1707937766060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n-    padding: 0.928rem;\n+    padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n     margin-bottom: 1rem;\n }\n \n"
+                },
+                {
+                    "date": 1707937782919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,8 @@\n     text-align: center;\n }\n \n .price-title {\n-    width: 100%;\n     font-size: 1rem;\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1707937795987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,11 +57,11 @@\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n-    display: flex;\n+    /* display: flex;\n     align-items: center;\n-    justify-content: center;\n+    justify-content: center; */\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n     margin-bottom: 1rem;\n }\n"
+                },
+                {
+                    "date": 1707937816808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,11 +57,11 @@\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n-    /* display: flex;\n+    /* display: flex;*/\n     align-items: center;\n-    justify-content: center; */\n+    /*justify-content: center; */\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n     margin-bottom: 1rem;\n }\n"
+                },
+                {
+                    "date": 1707937852727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,8 @@\n     align-items: center;\n     /*justify-content: center; */\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n-    margin-bottom: 1rem;\n }\n \n \n .price-title > span {\n"
+                },
+                {
+                    "date": 1707937861834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n     align-items: center;\n     /*justify-content: center; */\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n+    margin-bottom: 1rem;\n }\n \n \n .price-title > span {\n"
+                },
+                {
+                    "date": 1707937880380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     /* display: flex;*/\n     align-items: center;\n     /*justify-content: center; */\n-    padding: 0.928rem 20%;\n+    padding: 1rem 20%;\n     border-radius: 0.625rem;\n     margin-bottom: 1rem;\n }\n \n"
+                },
+                {
+                    "date": 1707937993008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,11 +60,11 @@\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     /* display: flex;*/\n     align-items: center;\n     /*justify-content: center; */\n-    padding: 1rem 20%;\n+    padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n-    margin-bottom: 1rem;\n+    margin-bottom: 2rem;\n }\n \n \n .price-title > span {\n"
+                },
+                {
+                    "date": 1707938053498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,23 @@\n     align-items: center;\n     justify-content: center;\n }\n \n+\n+footer {\n+    margin-top: 20px;\n+    text-align: center;\n+}\n+\n+.attribution {\n+    font-size: 11px;\n+    text-align: center;\n+}\n+\n+.attribution a {\n+    color: hsl(228, 45%, 44%);\n+}\n+\n /*\n main {\n     display: flex;\n     justify-content: center;\n@@ -205,22 +220,9 @@\n     padding-left: 4px;\n     font-weight: 700;\n }\n \n-footer {\n-    margin-top: 20px;\n-    text-align: center;\n-}\n \n-.attribution {\n-    font-size: 11px;\n-    text-align: center;\n-}\n-\n-.attribution a {\n-    color: hsl(228, 45%, 44%);\n-}\n-\n /* @media (max-width: 650px) {\n     main {\n         height: auto;\n     }\n"
+                },
+                {
+                    "date": 1707938060771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,8 @@\n \n \n footer {\n     margin-top: 20px;\n-    text-align: center;\n }\n \n .attribution {\n     font-size: 11px;\n"
+                },
+                {
+                    "date": 1707938222869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,8 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-\n footer {\n     margin-top: 20px;\n }\n \n"
+                },
+                {
+                    "date": 1707938465790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n }\n \n .register-form {\n     background-color: var(--white);\n-    padding: 1.875rem;\n+    padding: 1.25rem;\n     border-radius: 0.5rem;\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1707938509609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,22 @@\n     align-items: center;\n     justify-content: center;\n }\n \n+.register-form button {\n+    background-color: var(--green);\n+    color: #fff;\n+    cursor: pointer;\n+    width: calc(100% - 1.25rem);\n+    padding: 1.125rem;\n+    margin-bottom: 1.200rem;\n+    border-radius: 5px;\n+    border: 1px solid #ccc;\n+    font-size: 1rem;\n+    font-weight: 700;\n+    text-transform: uppercase;\n+}\n+\n footer {\n     margin-top: 20px;\n }\n \n@@ -183,22 +197,8 @@\n .error-message.show {\n     display: block;\n }\n \n-button {\n-    background-color: var(--green);\n-    color: #fff;\n-    cursor: pointer;\n-    width: calc(100% - 1.25rem);\n-    padding: 1.125rem;\n-    margin-bottom: 1.200rem;\n-    border-radius: 5px;\n-    border: 1px solid #ccc;\n-    font-size: 1rem;\n-    font-weight: 700;\n-    text-transform: uppercase;\n-}\n-\n button:hover {\n     background-color: hsl(154, 59%, 68%);\n     cursor: pointer;\n }\n"
+                },
+                {
+                    "date": 1707938553556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n     cursor: pointer;\n     width: calc(100% - 1.25rem);\n     padding: 1.125rem;\n     margin-bottom: 1.200rem;\n-    border-radius: 5px;\n+    border-radius: 0.313rem;\n     border: 1px solid #ccc;\n     font-size: 1rem;\n     font-weight: 700;\n     text-transform: uppercase;\n"
+                },
+                {
+                    "date": 1707938577347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n     background-color: var(--green);\n     color: #fff;\n     cursor: pointer;\n     width: calc(100% - 1.25rem);\n-    padding: 1.125rem;\n+    padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     border: 1px solid #ccc;\n     font-size: 1rem;\n"
+                },
+                {
+                    "date": 1707938602110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n }\n \n .register-form button {\n     background-color: var(--green);\n-    color: #fff;\n+    color: var(--white);\n     cursor: pointer;\n     width: calc(100% - 1.25rem);\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n"
+                },
+                {
+                    "date": 1707938626297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,8 @@\n .register-form button {\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n-    width: calc(100% - 1.25rem);\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     border: 1px solid #ccc;\n"
+                },
+                {
+                    "date": 1707938663531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,9 @@\n     border-radius: 0.313rem;\n     border: 1px solid #ccc;\n     font-size: 1rem;\n     font-weight: 700;\n+    letter-spacing: 2px;\n     text-transform: uppercase;\n }\n \n footer {\n"
+                },
+                {
+                    "date": 1707938685388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,10 +91,10 @@\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     border: 1px solid #ccc;\n     font-size: 1rem;\n-    font-weight: 700;\n-    letter-spacing: 2px;\n+    font-weight: 500;\n+    letter-spacing: 1px;\n     text-transform: uppercase;\n }\n \n footer {\n"
+                },
+                {
+                    "date": 1707938714283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n     cursor: pointer;\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n-    border: 1px solid #ccc;\n+    border: none;\n     font-size: 1rem;\n     font-weight: 500;\n     letter-spacing: 1px;\n     text-transform: uppercase;\n"
+                },
+                {
+                    "date": 1707938775953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,12 @@\n     align-items: center;\n     justify-content: center;\n }\n \n+.register-form input {\n+    \n+}\n+\n .register-form button {\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n"
+                },
+                {
+                    "date": 1707938804734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,17 @@\n     justify-content: center;\n }\n \n .register-form input {\n-    \n+    width: calc(100% - 1.125rem);\n+    padding: 1.125rem;\n+    margin-bottom: 1.200rem;\n+    border-radius: 5px;\n+    border: 1px solid #ccc;\n+    color: var(--dark-blue);\n+    font-size: 1rem;\n+    font-weight: 700;\n+    text-indent: 0.75rem;\n }\n \n .register-form button {\n     background-color: var(--green);\n@@ -145,21 +153,8 @@\n     justify-content: center;\n     padding: 2rem;\n }\n \n-input[type=\"text\"],\n-input[type=\"email\"],\n-input[type=\"password\"] {\n-    width: calc(100% - 1.125rem);\n-    padding: 1.125rem;\n-    margin-bottom: 1.200rem;\n-    border-radius: 5px;\n-    border: 1px solid #ccc;\n-    color: var(--dark-blue);\n-    font-size: 1rem;\n-    font-weight: 700;\n-    text-indent: 0.75rem;\n-}\n \n input {\n     border-style: none;\n     outline: none;\n"
+                },
+                {
+                    "date": 1707938829186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n     width: calc(100% - 1.125rem);\n     padding: 1.125rem;\n     margin-bottom: 1.200rem;\n     border-radius: 5px;\n-    border: 1px solid #ccc;\n+    border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n     font-size: 1rem;\n     font-weight: 700;\n     text-indent: 0.75rem;\n"
+                },
+                {
+                    "date": 1707938849394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n }\n \n .register-form input {\n     width: calc(100% - 1.125rem);\n-    padding: 1.125rem;\n+    padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 5px;\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n"
+                },
+                {
+                    "date": 1707938868117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n .register-form input {\n     width: calc(100% - 1.125rem);\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n-    border-radius: 5px;\n+    border-radius: 0.313rem;\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n     font-size: 1rem;\n     font-weight: 700;\n"
+                },
+                {
+                    "date": 1707938953183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,24 @@\n     letter-spacing: 1px;\n     text-transform: uppercase;\n }\n \n+.register-form p {\n+    color: var(--grayish-blue);\n+    font-size: 0.7rem;\n+    font-weight: 700;\n+    letter-spacing: -0.016rem;\n+    display: flex;\n+    align-items: center;\n+    justify-content: center;\n+}\n+\n+.terms {\n+    color: var(--red);\n+    padding-left: 4px;\n+    font-weight: 700;\n+}\n+\n footer {\n     margin-top: 20px;\n }\n \n@@ -201,25 +217,9 @@\n     background-color: hsl(154, 59%, 68%);\n     cursor: pointer;\n }\n \n-form p {\n-    color: var(--grayish-blue);\n-    font-size: 0.7rem;\n-    font-weight: 700;\n-    letter-spacing: -0.016rem;\n-    display: flex;\n-    align-items: center;\n-    justify-content: center;\n-}\n \n-.terms {\n-    color: var(--red);\n-    padding-left: 4px;\n-    font-weight: 700;\n-}\n-\n-\n /* @media (max-width: 650px) {\n     main {\n         height: auto;\n     }\n"
+                },
+                {
+                    "date": 1707938973017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-.terms {\n+a.terms {\n     color: var(--red);\n     padding-left: 4px;\n     font-weight: 700;\n }\n"
+                },
+                {
+                    "date": 1707938979372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-a.terms {\n+a > .terms {\n     color: var(--red);\n     padding-left: 4px;\n     font-weight: 700;\n }\n"
+                },
+                {
+                    "date": 1707939020299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,11 +118,11 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-a > .terms {\n+a.terms {\n     color: var(--red);\n-    padding-left: 4px;\n+    padding: 1rem;\n     font-weight: 700;\n }\n \n footer {\n"
+                },
+                {
+                    "date": 1707939053169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n }\n \n a.terms {\n     color: var(--red);\n-    padding: 1rem;\n+    padding: 0.5rem;\n     font-weight: 700;\n }\n \n footer {\n"
+                },
+                {
+                    "date": 1707939062872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n }\n \n a.terms {\n     color: var(--red);\n-    padding: 0.5rem;\n+    padding: 0.5rem 1.875rem;\n     font-weight: 700;\n }\n \n footer {\n"
+                },
+                {
+                    "date": 1707939104383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,11 +113,9 @@\n     color: var(--grayish-blue);\n     font-size: 0.7rem;\n     font-weight: 700;\n     letter-spacing: -0.016rem;\n-    display: flex;\n-    align-items: center;\n-    justify-content: center;\n+    text-align: center;\n }\n \n a.terms {\n     color: var(--red);\n"
+                },
+                {
+                    "date": 1707939121288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,8 +114,9 @@\n     font-size: 0.7rem;\n     font-weight: 700;\n     letter-spacing: -0.016rem;\n     text-align: center;\n+    padding: 0.5rem 1.875rem;\n }\n \n a.terms {\n     color: var(--red);\n"
+                },
+                {
+                    "date": 1707939212861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,14 +114,13 @@\n     font-size: 0.7rem;\n     font-weight: 700;\n     letter-spacing: -0.016rem;\n     text-align: center;\n-    padding: 0.5rem 1.875rem;\n+    padding: 0.5rem 2.5rem;\n }\n \n a.terms {\n     color: var(--red);\n-    padding: 0.5rem 1.875rem;\n     font-weight: 700;\n }\n \n footer {\n"
+                },
+                {
+                    "date": 1707939453566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,12 @@\n     align-items: center;\n     justify-content: center;\n }\n \n+.register-form div {\n+    \n+}\n+\n .register-form input {\n     width: calc(100% - 1.125rem);\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n"
+                },
+                {
+                    "date": 1707939461876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     justify-content: center;\n }\n \n .register-form div {\n-    \n+    position: relative;\n }\n \n .register-form input {\n     width: calc(100% - 1.125rem);\n"
+                },
+                {
+                    "date": 1707939489586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,12 @@\n     justify-content: center;\n }\n \n .register-form div {\n-    position: relative;\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: center;\n+    align-items: center;\n }\n \n .register-form input {\n     width: calc(100% - 1.125rem);\n"
+                },
+                {
+                    "date": 1707939507376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,14 +82,14 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-.register-form div {\n+/* .register-form div {\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     align-items: center;\n-}\n+} */\n \n .register-form input {\n     width: calc(100% - 1.125rem);\n     padding: 1rem;\n"
+                },
+                {
+                    "date": 1707940942028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,16 @@\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n     padding: 0 1.25rem;\n }\n \n+.error-message {\n+    display: none;\n+    color: var(--red);\n+    font-size: 12px;\n+    margin-top: 5px;\n+}\n+\n+\n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n@@ -82,14 +90,14 @@\n     align-items: center;\n     justify-content: center;\n }\n \n-/* .register-form div {\n+.register-form div {\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     align-items: center;\n-} */\n+}\n \n .register-form input {\n     width: calc(100% - 1.125rem);\n     padding: 1rem;\n@@ -205,16 +213,8 @@\n     background-size: contain;\n     background-color: var(--red);\n     border-radius: 50%;\n }\n-\n-.error-message {\n-    display: none;\n-    color: var(--red);\n-    font-size: 12px;\n-    margin-top: 5px;\n-}\n-\n .error-message.show {\n     display: block;\n }\n \n"
+                },
+                {
+                    "date": 1707940963441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n     padding: 0 1.25rem;\n }\n \n-.error-message {\n+.error-message, .error-icon {\n     display: none;\n     color: var(--red);\n     font-size: 12px;\n     margin-top: 5px;\n"
+                },
+                {
+                    "date": 1707941058479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,11 @@\n     font-size: 12px;\n     margin-top: 5px;\n }\n \n+.container {\n+    \n+}\n \n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n"
+                },
+                {
+                    "date": 1707941068527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     margin-top: 5px;\n }\n \n .container {\n-    \n+    min-height: ;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941078941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,268 @@\n+@import url(\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap\");\n+\n+:root {\n+    /* Colors */\n+    /* Primary */\n+    --red: hsl(0, 100%, 74%);\n+    --green: hsl(154, 59%, 51%);\n+    /* Accent */\n+    --blue: hsl(248, 32%, 49%);\n+    /* Neutral */\n+    --dark-blue: hsl(249, 10%, 26%);\n+    --grayish-blue: hsl(246, 25%, 77%);\n+    --white: #fff;\n+    /* Other variables */\n+    --font-size-base: 1rem; /* 16px */\n+    --font-weight-base: 400;\n+}\n+\n+*,\n+*::after,\n+*::before {\n+    margin: 0;\n+    padding: 0;\n+    box-sizing: border-box;\n+}\n+\n+body,\n+html {\n+    font-family: \"Poppins\", sans-serif;\n+    font-size: var(--font-size-base);\n+    font-weight: var(--font-weight-base);\n+    background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n+    padding: 0 1.25rem;\n+}\n+\n+.error-message, .error-icon {\n+    display: none;\n+    color: var(--red);\n+    font-size: 12px;\n+    margin-top: 5px;\n+}\n+\n+.container {\n+    min-height: 100vh;\n+    width: 100%;\n+}\n+\n+.learn-title {\n+    font-size: 3rem;\n+    font-weight: 700;\n+    color: #fff;\n+    line-height: 3.3rem;\n+    padding: 1rem;\n+    margin-bottom: 1rem;\n+    margin-top: 4rem;\n+    text-align: center;\n+}\n+\n+.intro {\n+    color: var(--white);\n+    padding: 1rem;\n+    font-weight: 700;\n+    margin-bottom: 4rem;\n+    text-align: center;\n+}\n+\n+.price-title {\n+    font-size: 1rem;\n+    font-weight: 400;\n+    background-color: var(--blue);\n+    color: var(--white);\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    /* display: flex;*/\n+    align-items: center;\n+    /*justify-content: center; */\n+    padding: 0.928rem 20%;\n+    border-radius: 0.625rem;\n+    margin-bottom: 2rem;\n+}\n+\n+\n+.price-title > span {\n+    font-weight: 700;\n+    margin-right: 0.25rem;\n+}\n+\n+.register-form {\n+    background-color: var(--white);\n+    padding: 1.25rem;\n+    border-radius: 0.5rem;\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    display: flex;\n+    flex-direction: column;\n+    align-items: center;\n+    justify-content: center;\n+}\n+\n+.register-form div {\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: center;\n+    align-items: center;\n+}\n+\n+.register-form input {\n+    width: calc(100% - 1.125rem);\n+    padding: 1rem;\n+    margin-bottom: 1.200rem;\n+    border-radius: 0.313rem;\n+    border: 1px solid var(--grayish-blue);\n+    color: var(--dark-blue);\n+    font-size: 1rem;\n+    font-weight: 700;\n+    text-indent: 0.75rem;\n+}\n+\n+.register-form button {\n+    background-color: var(--green);\n+    color: var(--white);\n+    cursor: pointer;\n+    padding: 1rem;\n+    margin-bottom: 1.200rem;\n+    border-radius: 0.313rem;\n+    border: none;\n+    font-size: 1rem;\n+    font-weight: 500;\n+    letter-spacing: 1px;\n+    text-transform: uppercase;\n+}\n+\n+.register-form p {\n+    color: var(--grayish-blue);\n+    font-size: 0.7rem;\n+    font-weight: 700;\n+    letter-spacing: -0.016rem;\n+    text-align: center;\n+    padding: 0.5rem 2.5rem;\n+}\n+\n+a.terms {\n+    color: var(--red);\n+    font-weight: 700;\n+}\n+\n+footer {\n+    margin-top: 20px;\n+}\n+\n+.attribution {\n+    font-size: 11px;\n+    text-align: center;\n+}\n+\n+.attribution a {\n+    color: hsl(228, 45%, 44%);\n+}\n+\n+/*\n+main {\n+    display: flex;\n+    justify-content: center;\n+    align-items: center;\n+    height: 100vh;\n+    background-color: var(--red);\n+    background-image: url(\"./images/bg-intro-desktop.png\");\n+    background-size: cover;\n+    background-position: center;\n+    width: 100%;\n+}\n+\n+.container {\n+    min-height: 100vh;\n+    display: flex;\n+    flex-direction: row;\n+    align-items: center;\n+    justify-content: center;\n+    padding: 5rem;\n+}\n+\n+section {\n+    max-width: 100%;\n+    width: 50%;\n+    display: flex;\n+    flex-direction: column;\n+    align-items: center;\n+    justify-content: center;\n+    padding: 2rem;\n+}\n+\n+\n+input {\n+    border-style: none;\n+    outline: none;\n+}\n+\n+input:focus {\n+    border: 1px solid var(--blue);\n+}\n+\n+.input-field {\n+    border: 1px solid var(--dark-blue);\n+}\n+\n+.input-field.input-error {\n+    border-color: var(--red);\n+}\n+\n+.input-field.input-error::after {\n+    content: \"\";\n+    position: absolute;\n+    top: 50%;\n+    right: 10px;\n+    transform: translateY(-50%);\n+    width: 10px;\n+    height: 10px;\n+    background-image: url(./images/icon-error.svg);\n+    background-size: contain;\n+    background-color: var(--red);\n+    border-radius: 50%;\n+}\n+.error-message.show {\n+    display: block;\n+}\n+\n+button:hover {\n+    background-color: hsl(154, 59%, 68%);\n+    cursor: pointer;\n+}\n+\n+\n+/* @media (max-width: 650px) {\n+    main {\n+        height: auto;\n+    }\n+    .container {\n+        width: 100%;\n+        flex-direction: column;\n+        padding: 1rem;\n+    }\n+    section {\n+        width: 100%;\n+        padding: 1rem;\n+    }\n+\n+    .learn {\n+        font-size: 1.6rem;\n+        line-height: normal;\n+        margin: 3rem;\n+        padding: 1rem;\n+    }\n+} */\n+/*\n+@media screen and (max-width: 768px) {\n+    .container {\n+        flex-direction: column;\n+        text-align: center;\n+        padding: 3rem;\n+    }\n+\n+    section {\n+        width: 100%;\n+    }\n+\n+    .container-form {\n+        margin-bottom: 5rem;\n+        margin-right: 0;\n+    }\n+} */\n"
+                },
+                {
+                    "date": 1707941094081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,277 +42,13 @@\n \n .container {\n     min-height: 100vh;\n     width: 100%;\n-}\n-\n-.learn-title {\n-    font-size: 3rem;\n-    font-weight: 700;\n-    color: #fff;\n-    line-height: 3.3rem;\n-    padding: 1rem;\n-    margin-bottom: 1rem;\n-    margin-top: 4rem;\n-    text-align: center;\n-}\n-\n-.intro {\n-    color: var(--white);\n-    padding: 1rem;\n-    font-weight: 700;\n-    margin-bottom: 4rem;\n-    text-align: center;\n-}\n-\n-.price-title {\n-    font-size: 1rem;\n-    font-weight: 400;\n-    background-color: var(--blue);\n-    color: var(--white);\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n-    /* display: flex;*/\n-    align-items: center;\n-    /*justify-content: center; */\n-    padding: 0.928rem 20%;\n-    border-radius: 0.625rem;\n-    margin-bottom: 2rem;\n-}\n-\n-\n-.price-title > span {\n-    font-weight: 700;\n-    margin-right: 0.25rem;\n-}\n-\n-.register-form {\n-    background-color: var(--white);\n-    padding: 1.25rem;\n-    border-radius: 0.5rem;\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n-    flex-direction: column;\n     align-items: center;\n     justify-content: center;\n }\n \n-.register-form div {\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: center;\n-    align-items: center;\n-}\n-\n-.register-form input {\n-    width: calc(100% - 1.125rem);\n-    padding: 1rem;\n-    margin-bottom: 1.200rem;\n-    border-radius: 0.313rem;\n-    border: 1px solid var(--grayish-blue);\n-    color: var(--dark-blue);\n-    font-size: 1rem;\n-    font-weight: 700;\n-    text-indent: 0.75rem;\n-}\n-\n-.register-form button {\n-    background-color: var(--green);\n-    color: var(--white);\n-    cursor: pointer;\n-    padding: 1rem;\n-    margin-bottom: 1.200rem;\n-    border-radius: 0.313rem;\n-    border: none;\n-    font-size: 1rem;\n-    font-weight: 500;\n-    letter-spacing: 1px;\n-    text-transform: uppercase;\n-}\n-\n-.register-form p {\n-    color: var(--grayish-blue);\n-    font-size: 0.7rem;\n-    font-weight: 700;\n-    letter-spacing: -0.016rem;\n-    text-align: center;\n-    padding: 0.5rem 2.5rem;\n-}\n-\n-a.terms {\n-    color: var(--red);\n-    font-weight: 700;\n-}\n-\n-footer {\n-    margin-top: 20px;\n-}\n-\n-.attribution {\n-    font-size: 11px;\n-    text-align: center;\n-}\n-\n-.attribution a {\n-    color: hsl(228, 45%, 44%);\n-}\n-\n-/*\n-main {\n-    display: flex;\n-    justify-content: center;\n-    align-items: center;\n-    height: 100vh;\n-    background-color: var(--red);\n-    background-image: url(\"./images/bg-intro-desktop.png\");\n-    background-size: cover;\n-    background-position: center;\n-    width: 100%;\n-}\n-\n-.container {\n-    min-height: 100vh;\n-    display: flex;\n-    flex-direction: row;\n-    align-items: center;\n-    justify-content: center;\n-    padding: 5rem;\n-}\n-\n-section {\n-    max-width: 100%;\n-    width: 50%;\n-    display: flex;\n-    flex-direction: column;\n-    align-items: center;\n-    justify-content: center;\n-    padding: 2rem;\n-}\n-\n-\n-input {\n-    border-style: none;\n-    outline: none;\n-}\n-\n-input:focus {\n-    border: 1px solid var(--blue);\n-}\n-\n-.input-field {\n-    border: 1px solid var(--dark-blue);\n-}\n-\n-.input-field.input-error {\n-    border-color: var(--red);\n-}\n-\n-.input-field.input-error::after {\n-    content: \"\";\n-    position: absolute;\n-    top: 50%;\n-    right: 10px;\n-    transform: translateY(-50%);\n-    width: 10px;\n-    height: 10px;\n-    background-image: url(./images/icon-error.svg);\n-    background-size: contain;\n-    background-color: var(--red);\n-    border-radius: 50%;\n-}\n-.error-message.show {\n-    display: block;\n-}\n-\n-button:hover {\n-    background-color: hsl(154, 59%, 68%);\n-    cursor: pointer;\n-}\n-\n-\n-/* @media (max-width: 650px) {\n-    main {\n-        height: auto;\n-    }\n-    .container {\n-        width: 100%;\n-        flex-direction: column;\n-        padding: 1rem;\n-    }\n-    section {\n-        width: 100%;\n-        padding: 1rem;\n-    }\n-\n-    .learn {\n-        font-size: 1.6rem;\n-        line-height: normal;\n-        margin: 3rem;\n-        padding: 1rem;\n-    }\n-} */\n-/*\n-@media screen and (max-width: 768px) {\n-    .container {\n-        flex-direction: column;\n-        text-align: center;\n-        padding: 3rem;\n-    }\n-\n-    section {\n-        width: 100%;\n-    }\n-\n-    .container-form {\n-        margin-bottom: 5rem;\n-        margin-right: 0;\n-    }\n-} */\n-@import url(\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap\");\n-\n-:root {\n-    /* Colors */\n-    /* Primary */\n-    --red: hsl(0, 100%, 74%);\n-    --green: hsl(154, 59%, 51%);\n-    /* Accent */\n-    --blue: hsl(248, 32%, 49%);\n-    /* Neutral */\n-    --dark-blue: hsl(249, 10%, 26%);\n-    --grayish-blue: hsl(246, 25%, 77%);\n-    --white: #fff;\n-    /* Other variables */\n-    --font-size-base: 1rem; /* 16px */\n-    --font-weight-base: 400;\n-}\n-\n-*,\n-*::after,\n-*::before {\n-    margin: 0;\n-    padding: 0;\n-    box-sizing: border-box;\n-}\n-\n-body,\n-html {\n-    font-family: \"Poppins\", sans-serif;\n-    font-size: var(--font-size-base);\n-    font-weight: var(--font-weight-base);\n-    background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n-    padding: 0 1.25rem;\n-}\n-\n-.error-message, .error-icon {\n-    display: none;\n-    color: var(--red);\n-    font-size: 12px;\n-    margin-top: 5px;\n-}\n-\n-.container {\n-    min-height: ;\n-}\n-\n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n"
+                },
+                {
+                    "date": 1707941118421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,8 @@\n html {\n     font-family: \"Poppins\", sans-serif;\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n-    background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n     padding: 0 1.25rem;\n }\n \n .error-message, .error-icon {\n@@ -45,8 +44,9 @@\n     width: 100%;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n+    background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941147557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n     display: flex;\n     align-items: center;\n     justify-content: center;\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n+    padding: ;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941166692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,11 +45,13 @@\n     display: flex;\n     align-items: center;\n     justify-content: center;\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n-    padding: ;\n+    padding: 100px 0;\n }\n \n+\n+\n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n"
+                },
+                {
+                    "date": 1707941184122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,10 +48,12 @@\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n     padding: 100px 0;\n }\n \n+.intro {\n+    \n+}\n \n-\n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n"
+                },
+                {
+                    "date": 1707941194831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,10 @@\n     padding: 100px 0;\n }\n \n .intro {\n-    \n+    display: flex;\n+    align-items: center;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941205277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,10 @@\n \n .intro {\n     display: flex;\n     align-items: center;\n+    justify-content: center;\n+    flex-direction: column;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941225052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,10 @@\n     display: flex;\n     align-items: center;\n     justify-content: center;\n     flex-direction: column;\n+    text-align: center;\n+    padding: ;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941238065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     align-items: center;\n     justify-content: center;\n     flex-direction: column;\n     text-align: center;\n-    padding: ;\n+    padding: 0 30px;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941271359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n     justify-content: center;\n     flex-direction: column;\n     text-align: center;\n     padding: 0 30px;\n+    max-width: ;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941278551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,10 @@\n     justify-content: center;\n     flex-direction: column;\n     text-align: center;\n     padding: 0 30px;\n-    max-width: ;\n+    max-width: 1300px;\n+    margin: 0 auto;\n }\n \n .learn-title {\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1707941288851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,10 @@\n     max-width: 1300px;\n     margin: 0 auto;\n }\n \n+\n+\n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n"
+                },
+                {
+                    "date": 1707941312161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,14 @@\n     max-width: 1300px;\n     margin: 0 auto;\n }\n \n+.intro {\n+    flex: 1;\n+}\n \n \n+\n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n"
+                },
+                {
+                    "date": 1707941374048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n     padding: 100px 0;\n }\n \n-.intro {\n+main {\n     display: flex;\n     align-items: center;\n     justify-content: center;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1707941682319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     font-size: 12px;\n     margin-top: 5px;\n }\n \n-.container {\n+main {\n     min-height: 100vh;\n     width: 100%;\n     display: flex;\n     align-items: center;\n@@ -48,19 +48,8 @@\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n     padding: 100px 0;\n }\n \n-main {\n-    display: flex;\n-    align-items: center;\n-    justify-content: center;\n-    flex-direction: column;\n-    text-align: center;\n-    padding: 0 30px;\n-    max-width: 1300px;\n-    margin: 0 auto;\n-}\n-\n .intro {\n     flex: 1;\n }\n \n"
+                },
+                {
+                    "date": 1707941722814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,12 @@\n     background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n     padding: 100px 0;\n }\n \n+.container {\n+    \n+}\n+\n .intro {\n     flex: 1;\n }\n \n"
+                },
+                {
+                    "date": 1707941732110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     padding: 100px 0;\n }\n \n .container {\n-    \n+    display: flex;\n }\n \n .intro {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941740833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,10 @@\n }\n \n .container {\n     display: flex;\n+    align-items: center;\n+    justify-content: center;\n }\n \n .intro {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941755000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n .container {\n     display: flex;\n     align-items: center;\n     justify-content: center;\n+    flex-direction: column;\n }\n \n .intro {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941763298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n     display: flex;\n     align-items: center;\n     justify-content: center;\n     flex-direction: column;\n+    text-align: center;\n }\n \n .intro {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941771561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n     align-items: center;\n     justify-content: center;\n     flex-direction: column;\n     text-align: center;\n+    padding: 0 30px;\n }\n \n .intro {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941779884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n     justify-content: center;\n     flex-direction: column;\n     text-align: center;\n     padding: 0 30px;\n+    max-width: 1300px;\n }\n \n .intro {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941790551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n     flex-direction: column;\n     text-align: center;\n     padding: 0 30px;\n     max-width: 1300px;\n+    margin: ;\n }\n \n .intro {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941838850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,17 +56,19 @@\n     flex-direction: column;\n     text-align: center;\n     padding: 0 30px;\n     max-width: 1300px;\n-    margin: ;\n+    margin: 0 auto;\n }\n \n .intro {\n     flex: 1;\n }\n \n+.form-container {\n+    flex: 1;\n+}\n \n-\n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n"
+                },
+                {
+                    "date": 1707941853019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n     max-width: 1300px;\n     margin: 0 auto;\n }\n \n-.intro {\n+.intro-container {\n     flex: 1;\n }\n \n .form-container {\n"
+                },
+                {
+                    "date": 1707941897413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n }\n \n .intro-container {\n     flex: 1;\n+    margin-bottom: 50px;\n }\n \n .form-container {\n     flex: 1;\n"
+                },
+                {
+                    "date": 1707941984735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n \n .form-container {\n     flex: 1;\n }\n-\n+/* \n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n@@ -93,11 +93,11 @@\n     font-weight: 400;\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n-    /* display: flex;*/\n+    display: flex;\n     align-items: center;\n-    /*justify-content: center; */\n+    justify-content: center;\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n     margin-bottom: 2rem;\n }\n@@ -178,30 +178,9 @@\n .attribution a {\n     color: hsl(228, 45%, 44%);\n }\n \n-/*\n-main {\n-    display: flex;\n-    justify-content: center;\n-    align-items: center;\n-    height: 100vh;\n-    background-color: var(--red);\n-    background-image: url(\"./images/bg-intro-desktop.png\");\n-    background-size: cover;\n-    background-position: center;\n-    width: 100%;\n-}\n \n-.container {\n-    min-height: 100vh;\n-    display: flex;\n-    flex-direction: row;\n-    align-items: center;\n-    justify-content: center;\n-    padding: 5rem;\n-}\n-\n section {\n     max-width: 100%;\n     width: 50%;\n     display: flex;\n@@ -248,9 +227,9 @@\n \n button:hover {\n     background-color: hsl(154, 59%, 68%);\n     cursor: pointer;\n-}\n+} */\n \n \n /* @media (max-width: 650px) {\n     main {\n"
+                },
+                {
+                    "date": 1707942009750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,8 @@\n html {\n     font-family: \"Poppins\", sans-serif;\n     font-size: var(--font-size-base);\n     font-weight: var(--font-weight-base);\n-    padding: 0 1.25rem;\n }\n \n .error-message, .error-icon {\n     display: none;\n"
+                },
+                {
+                    "date": 1707942062072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,11 @@\n }\n \n .form-container {\n     flex: 1;\n+    color: var(--white);\n }\n+\n /* \n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n"
+                },
+                {
+                    "date": 1707942078136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,8 @@\n }\n \n .form-container {\n     flex: 1;\n-    color: var(--white);\n }\n \n /* \n .learn-title {\n"
+                },
+                {
+                    "date": 1707942100902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,8 @@\n .form-container {\n     flex: 1;\n }\n \n-/* \n .learn-title {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n@@ -78,8 +77,9 @@\n     margin-bottom: 1rem;\n     margin-top: 4rem;\n     text-align: center;\n }\n+/* \n \n .intro {\n     color: var(--white);\n     padding: 1rem;\n"
+                },
+                {
+                    "date": 1707942111656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n .form-container {\n     flex: 1;\n }\n \n-.learn-title {\n+.intro-container h1 {\n     font-size: 3rem;\n     font-weight: 700;\n     color: #fff;\n     line-height: 3.3rem;\n"
+                },
+                {
+                    "date": 1707942119219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n     flex: 1;\n }\n \n .intro-container h1 {\n-    font-size: 3rem;\n+    font-size: 2.5rem;\n     font-weight: 700;\n     color: #fff;\n     line-height: 3.3rem;\n     padding: 1rem;\n"
+                },
+                {
+                    "date": 1707942126981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,11 +69,11 @@\n }\n \n .intro-container h1 {\n     font-size: 2.5rem;\n+    line-height: 3rem;\n     font-weight: 700;\n     color: #fff;\n-    line-height: 3.3rem;\n     padding: 1rem;\n     margin-bottom: 1rem;\n     margin-top: 4rem;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1707942134040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n     line-height: 3rem;\n     font-weight: 700;\n     color: #fff;\n     padding: 1rem;\n-    margin-bottom: 1rem;\n+    margin-bottom: 2rem;\n     margin-top: 4rem;\n     text-align: center;\n }\n /* \n"
+                },
+                {
+                    "date": 1707942142134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,8 @@\n     font-size: 2.5rem;\n     line-height: 3rem;\n     font-weight: 700;\n     color: #fff;\n-    padding: 1rem;\n     margin-bottom: 2rem;\n     margin-top: 4rem;\n     text-align: center;\n }\n"
+                },
+                {
+                    "date": 1707942150695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,10 +73,8 @@\n     line-height: 3rem;\n     font-weight: 700;\n     color: #fff;\n     margin-bottom: 2rem;\n-    margin-top: 4rem;\n-    text-align: center;\n }\n /* \n \n .intro {\n"
+                },
+                {
+                    "date": 1707942173560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,12 +70,12 @@\n \n .intro-container h1 {\n     font-size: 2.5rem;\n     line-height: 3rem;\n-    font-weight: 700;\n     color: #fff;\n     margin-bottom: 2rem;\n }\n+\n /* \n \n .intro {\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1707942212423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,18 +74,19 @@\n     color: #fff;\n     margin-bottom: 2rem;\n }\n \n-/* \n-\n-.intro {\n+.intro-container p {\n     color: var(--white);\n     padding: 1rem;\n     font-weight: 700;\n     margin-bottom: 4rem;\n     text-align: center;\n }\n \n+/* \n+\n+\n .price-title {\n     font-size: 1rem;\n     font-weight: 400;\n     background-color: var(--blue);\n"
+                },
+                {
+                    "date": 1707942235560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n }\n \n .intro-container p {\n     color: var(--white);\n+    font-size: 1.3rem;\n     padding: 1rem;\n     font-weight: 700;\n     margin-bottom: 4rem;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1707942242195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,9 @@\n \n .intro-container p {\n     color: var(--white);\n     font-size: 1.3rem;\n+    line-height: ;\n     padding: 1rem;\n     font-weight: 700;\n     margin-bottom: 4rem;\n     text-align: center;\n"
+                },
+                {
+                    "date": 1707942255069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,13 +77,9 @@\n \n .intro-container p {\n     color: var(--white);\n     font-size: 1.3rem;\n-    line-height: ;\n-    padding: 1rem;\n-    font-weight: 700;\n-    margin-bottom: 4rem;\n-    text-align: center;\n+    line-height: 1.9rem;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942265883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n .intro-container h1 {\n     font-size: 2.5rem;\n     line-height: 3rem;\n     color: #fff;\n-    margin-bottom: 2rem;\n+    margin-bottom: 1rem;\n }\n \n .intro-container p {\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1707942300893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,10 @@\n     font-size: 1.3rem;\n     line-height: 1.9rem;\n }\n \n+\n+\n /* \n \n \n .price-title {\n"
+                },
+                {
+                    "date": 1707942307599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,10 +80,10 @@\n     font-size: 1.3rem;\n     line-height: 1.9rem;\n }\n \n+.form-container\n \n-\n /* \n \n \n .price-title {\n"
+                },
+                {
+                    "date": 1707942314151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,11 @@\n     font-size: 1.3rem;\n     line-height: 1.9rem;\n }\n \n-.form-container\n+.form-container .top-box {\n+    \n+}\n \n /* \n \n \n"
+                },
+                {
+                    "date": 1707942334925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,12 +63,8 @@\n     flex: 1;\n     margin-bottom: 50px;\n }\n \n-.form-container {\n-    flex: 1;\n-}\n-\n .intro-container h1 {\n     font-size: 2.5rem;\n     line-height: 3rem;\n     color: #fff;\n@@ -80,8 +76,12 @@\n     font-size: 1.3rem;\n     line-height: 1.9rem;\n }\n \n+.form-container {\n+    flex: 1;\n+}\n+\n .form-container .top-box {\n     \n }\n \n"
+                },
+                {
+                    "date": 1707942343946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n     flex: 1;\n }\n \n .form-container .top-box {\n-    \n+    background-color: var(--white);\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942362480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,18 +81,17 @@\n     flex: 1;\n }\n \n .form-container .top-box {\n-    background-color: var(--white);\n+    background-color: var(--blue);\n }\n \n /* \n \n \n .price-title {\n     font-size: 1rem;\n     font-weight: 400;\n-    background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     align-items: center;\n"
+                },
+                {
+                    "date": 1707942382633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,22 +82,22 @@\n }\n \n .form-container .top-box {\n     background-color: var(--blue);\n+    color: var(--white);\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    padding: 0.928rem 20%;\n }\n \n /* \n \n \n .price-title {\n     font-size: 1rem;\n     font-weight: 400;\n-    color: var(--white);\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n-    padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n     margin-bottom: 2rem;\n }\n \n"
+                },
+                {
+                    "date": 1707942400042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,9 @@\n     background-color: var(--blue);\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     padding: 0.928rem 20%;\n+    border-radius: 0.625rem;\n }\n \n /* \n \n@@ -96,9 +97,8 @@\n     font-weight: 400;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n-    border-radius: 0.625rem;\n     margin-bottom: 2rem;\n }\n \n \n"
+                },
+                {
+                    "date": 1707942446456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n \n .form-container .top-box {\n     background-color: var(--blue);\n     color: var(--white);\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    box-shadow: var(--dark-blue) 0px 0.5rem;\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n }\n \n"
+                },
+                {
+                    "date": 1707942469280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n \n .form-container .top-box {\n     background-color: var(--blue);\n     color: var(--white);\n-    box-shadow: var(--dark-blue) 0px 0.5rem;\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n }\n \n"
+                },
+                {
+                    "date": 1707942511307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,8 +86,9 @@\n     color: var(--white);\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     padding: 0.928rem 20%;\n     border-radius: 0.625rem;\n+    margin-bottom: 2rem;\n }\n \n /* \n \n@@ -97,9 +98,8 @@\n     font-weight: 400;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n-    margin-bottom: 2rem;\n }\n \n \n .price-title > span {\n"
+                },
+                {
+                    "date": 1707942549958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,8 +89,12 @@\n     border-radius: 0.625rem;\n     margin-bottom: 2rem;\n }\n \n+.form-container .top-box p {\n+    \n+}\n+\n /* \n \n \n .price-title {\n"
+                },
+                {
+                    "date": 1707942564565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,16 +90,15 @@\n     margin-bottom: 2rem;\n }\n \n .form-container .top-box p {\n-    \n+    font-size: 1.3rem;\n }\n \n /* \n \n \n .price-title {\n-    font-size: 1rem;\n     font-weight: 400;\n     display: flex;\n     align-items: center;\n     justify-content: center;\n"
+                },
+                {
+                    "date": 1707942572925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,8 +91,9 @@\n }\n \n .form-container .top-box p {\n     font-size: 1.3rem;\n+    line-height: 2.2rem;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942599068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,8 +94,10 @@\n     font-size: 1.3rem;\n     line-height: 2.2rem;\n }\n \n+.form-container .top-box \n+\n /* \n \n \n .price-title {\n"
+                },
+                {
+                    "date": 1707942613455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,11 @@\n     font-size: 1.3rem;\n     line-height: 2.2rem;\n }\n \n-.form-container .top-box \n+.form-container .top-box p span {\n+    font-weight: 700;\n+}\n \n /* \n \n \n@@ -108,9 +110,8 @@\n }\n \n \n .price-title > span {\n-    font-weight: 700;\n     margin-right: 0.25rem;\n }\n \n .register-form {\n"
+                },
+                {
+                    "date": 1707942636422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,20 +101,8 @@\n \n /* \n \n \n-.price-title {\n-    font-weight: 400;\n-    display: flex;\n-    align-items: center;\n-    justify-content: center;\n-}\n-\n-\n-.price-title > span {\n-    margin-right: 0.25rem;\n-}\n-\n .register-form {\n     background-color: var(--white);\n     padding: 1.25rem;\n     border-radius: 0.5rem;\n"
+                },
+                {
+                    "date": 1707942669954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,10 @@\n .form-container .top-box p span {\n     font-weight: 700;\n }\n \n+.form-container\n+\n /* \n \n \n .register-form {\n"
+                },
+                {
+                    "date": 1707942686845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,9 @@\n .form-container .top-box p span {\n     font-weight: 700;\n }\n \n-.form-container\n+.form-container .form \n \n /* \n \n \n"
+                },
+                {
+                    "date": 1707942692975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,9 +98,11 @@\n .form-container .top-box p span {\n     font-weight: 700;\n }\n \n-.form-container .form \n+.form-container .form {\n+    \n+}\n \n /* \n \n \n"
+                },
+                {
+                    "date": 1707942704064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,17 +99,16 @@\n     font-weight: 700;\n }\n \n .form-container .form {\n-    \n+    background-color: var(--white);\n+    padding: 1.25rem;\n }\n \n /* \n \n \n .register-form {\n-    background-color: var(--white);\n-    padding: 1.25rem;\n     border-radius: 0.5rem;\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1707942716312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,16 +101,16 @@\n \n .form-container .form {\n     background-color: var(--white);\n     padding: 1.25rem;\n+    border-radius: 0.5rem;\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n }\n \n /* \n \n \n .register-form {\n-    border-radius: 0.5rem;\n-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n     justify-content: center;\n"
+                },
+                {
+                    "date": 1707942733340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,8 +105,12 @@\n     border-radius: 0.5rem;\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n }\n \n+.field-group {\n+    \n+}\n+\n /* \n \n \n .register-form {\n"
+                },
+                {
+                    "date": 1707942745736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,9 +106,10 @@\n     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n }\n \n .field-group {\n-    \n+    position: relative;\n+    margin-bottom: 25px;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942777217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,8 +110,12 @@\n     position: relative;\n     margin-bottom: 25px;\n }\n \n+.form-container label {\n+    display: none;\n+}\n+\n /* \n \n \n .register-form {\n"
+                },
+                {
+                    "date": 1707942796811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,11 +110,11 @@\n     position: relative;\n     margin-bottom: 25px;\n }\n \n-.form-container label {\n+/* .form-container label {\n     display: none;\n-}\n+} */\n \n /* \n \n \n"
+                },
+                {
+                    "date": 1707942814654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,12 +110,14 @@\n     position: relative;\n     margin-bottom: 25px;\n }\n \n-/* .form-container label {\n+.form-container label {\n     display: none;\n-} */\n+}\n \n+.form-container\n+\n /* \n \n \n .register-form {\n"
+                },
+                {
+                    "date": 1707942825026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,9 +114,11 @@\n .form-container label {\n     display: none;\n }\n \n-.form-container\n+.form-container input {\n+    width: 100%;\n+}\n \n /* \n \n \n"
+                },
+                {
+                    "date": 1707942838946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,10 @@\n }\n \n .form-container input {\n     width: 100%;\n+    height: 60px;\n+    margin-bottom: ;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942853970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,10 @@\n \n .form-container input {\n     width: 100%;\n     height: 60px;\n-    margin-bottom: ;\n+    margin-bottom: 5px;\n+    border-radius: ;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942863050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n .form-container input {\n     width: 100%;\n     height: 60px;\n     margin-bottom: 5px;\n-    border-radius: ;\n+    border-radius: 10px;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942916115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,8 +119,10 @@\n     width: 100%;\n     height: 60px;\n     margin-bottom: 5px;\n     border-radius: 10px;\n+    border: 1px solid var(--grayish-blue);\n+    color: var(--dark-blue);\n }\n \n /* \n \n@@ -143,10 +145,8 @@\n     width: calc(100% - 1.125rem);\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n-    border: 1px solid var(--grayish-blue);\n-    color: var(--dark-blue);\n     font-size: 1rem;\n     font-weight: 700;\n     text-indent: 0.75rem;\n }\n"
+                },
+                {
+                    "date": 1707942937306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n .form-container input {\n     width: 100%;\n     height: 60px;\n     margin-bottom: 5px;\n-    border-radius: 10px;\n+    border-radius: 0.625rem;\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n }\n \n"
+                },
+                {
+                    "date": 1707942946394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n \n .form-container input {\n     width: 100%;\n     height: 60px;\n-    margin-bottom: 5px;\n+    margin-bottom: 0.313rem;\n     border-radius: 0.625rem;\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n }\n"
+                },
+                {
+                    "date": 1707942968811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,8 +121,9 @@\n     margin-bottom: 0.313rem;\n     border-radius: 0.625rem;\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n+    padding-left: 20px;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707942991520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,9 @@\n     border-radius: 0.625rem;\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n     padding-left: 20px;\n+    \n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943010768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,10 @@\n     border-radius: 0.625rem;\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n     padding-left: 20px;\n-    \n+    outline: none;\n+    text-indent: 0.75rem;\n }\n \n /* \n \n@@ -149,9 +150,8 @@\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     font-size: 1rem;\n     font-weight: 700;\n-    text-indent: 0.75rem;\n }\n \n .register-form button {\n     background-color: var(--green);\n"
+                },
+                {
+                    "date": 1707943045949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,8 +124,9 @@\n     color: var(--dark-blue);\n     padding-left: 20px;\n     outline: none;\n     text-indent: 0.75rem;\n+    font-size: 1rem;\n }\n \n /* \n \n@@ -148,9 +149,8 @@\n     width: calc(100% - 1.125rem);\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n-    font-size: 1rem;\n     font-weight: 700;\n }\n \n .register-form button {\n"
+                },
+                {
+                    "date": 1707943055763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,8 +125,9 @@\n     padding-left: 20px;\n     outline: none;\n     text-indent: 0.75rem;\n     font-size: 1rem;\n+    font-weight: 600;\n }\n \n /* \n \n@@ -149,9 +150,8 @@\n     width: calc(100% - 1.125rem);\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n-    font-weight: 700;\n }\n \n .register-form button {\n     background-color: var(--green);\n"
+                },
+                {
+                    "date": 1707943108136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,9 +114,10 @@\n .form-container label {\n     display: none;\n }\n \n-.form-container input {\n+.form-container input,\n+.form-container {\n     width: 100%;\n     height: 60px;\n     margin-bottom: 0.313rem;\n     border-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1707943117416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n     display: none;\n }\n \n .form-container input,\n-.form-container {\n+.form-container button[type=\"button\"], {\n     width: 100%;\n     height: 60px;\n     margin-bottom: 0.313rem;\n     border-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1707943125859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n     display: none;\n }\n \n .form-container input,\n-.form-container button[type=\"button\"], {\n+.form-container button[type=\"submit\"] {\n     width: 100%;\n     height: 60px;\n     margin-bottom: 0.313rem;\n     border-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1707943169840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n     display: none;\n }\n \n .form-container input,\n-.form-container button[type=\"submit\"] {\n+.form-container button[type=submit] {\n     width: 100%;\n     height: 60px;\n     margin-bottom: 0.313rem;\n     border-radius: 0.625rem;\n"
+                },
+                {
+                    "date": 1707943180383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,10 @@\n     font-size: 1rem;\n     font-weight: 600;\n }\n \n+.form-container button[type=submit]\n+\n /* \n \n \n .register-form {\n"
+                },
+                {
+                    "date": 1707943196166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,11 @@\n     font-size: 1rem;\n     font-weight: 600;\n }\n \n-.form-container button[type=submit]\n+.form-container button[type=submit] {\n+    border: none;\n+}\n \n /* \n \n \n"
+                },
+                {
+                    "date": 1707943222360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,38 +131,16 @@\n }\n \n .form-container button[type=submit] {\n     border: none;\n+    background-color: var(--green);\n+    color: var(--white);\n+    cursor: pointer;\n }\n \n /* \n \n-\n-.register-form {\n-    display: flex;\n-    flex-direction: column;\n-    align-items: center;\n-    justify-content: center;\n-}\n-\n-.register-form div {\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: center;\n-    align-items: center;\n-}\n-\n-.register-form input {\n-    width: calc(100% - 1.125rem);\n-    padding: 1rem;\n-    margin-bottom: 1.200rem;\n-    border-radius: 0.313rem;\n-}\n-\n .register-form button {\n-    background-color: var(--green);\n-    color: var(--white);\n-    cursor: pointer;\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     border: none;\n"
+                },
+                {
+                    "date": 1707943273521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,8 +134,9 @@\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n+    b\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943279299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n-    b\n+    box-shadow: ;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943285823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n-    box-shadow: ;\n+    box-shadow: 0px 4px ;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943294382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n-    box-shadow: 0px 4px ;\n+    box-shadow: 0px 4px hsl(hue, saturation, lightness);\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943303557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n-    box-shadow: 0px 4px hsl(hue, saturation, lightness);\n+    box-shadow: 0px 4px hsl(154, 56%, lightness);\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943312052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n-    box-shadow: 0px 4px hsl(154, 56%, lightness);\n+    box-shadow: 0px 4px hsl(154, 56%, 44%);\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943325602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,9 +124,9 @@\n     border: 1px solid var(--grayish-blue);\n     color: var(--dark-blue);\n     padding-left: 20px;\n     outline: none;\n-    text-indent: 0.75rem;\n+    /* text-indent: 0.75rem; */\n     font-size: 1rem;\n     font-weight: 600;\n }\n \n"
+                },
+                {
+                    "date": 1707943365548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,10 +125,11 @@\n     color: var(--dark-blue);\n     padding-left: 20px;\n     outline: none;\n     /* text-indent: 0.75rem; */\n+    font-weight: 600;\n     font-size: 1rem;\n-    font-weight: 600;\n+    font-weight: 500;\n }\n \n .form-container button[type=submit] {\n     border: none;\n@@ -144,10 +145,8 @@\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     border: none;\n-    font-size: 1rem;\n-    font-weight: 500;\n     letter-spacing: 1px;\n     text-transform: uppercase;\n }\n \n"
+                },
+                {
+                    "date": 1707943386044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,11 +125,12 @@\n     color: var(--dark-blue);\n     padding-left: 20px;\n     outline: none;\n     /* text-indent: 0.75rem; */\n-    font-weight: 600;\n     font-size: 1rem;\n     font-weight: 500;\n+    letter-spacing: 1px;\n+    text-transform: uppercase;\n }\n \n .form-container button[type=submit] {\n     border: none;\n@@ -145,10 +146,8 @@\n     padding: 1rem;\n     margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     border: none;\n-    letter-spacing: 1px;\n-    text-transform: uppercase;\n }\n \n .register-form p {\n     color: var(--grayish-blue);\n"
+                },
+                {
+                    "date": 1707943420959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,19 +126,21 @@\n     padding-left: 20px;\n     outline: none;\n     /* text-indent: 0.75rem; */\n     font-size: 1rem;\n-    font-weight: 500;\n-    letter-spacing: 1px;\n-    text-transform: uppercase;\n+    font-weight: 600;\n }\n \n .form-container button[type=submit] {\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n     cursor: pointer;\n     box-shadow: 0px 4px hsl(154, 56%, 44%);\n+    font-size: 1rem;\n+    font-weight: 500;\n+    letter-spacing: 1px;\n+    text-transform: uppercase;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943435555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,17 +137,17 @@\n     cursor: pointer;\n     box-shadow: 0px 4px hsl(154, 56%, 44%);\n     font-size: 1rem;\n     font-weight: 500;\n-    letter-spacing: 1px;\n+    letter-spacing: 2px;\n     text-transform: uppercase;\n+    margin-bottom: 1.200rem;\n }\n \n /* \n \n .register-form button {\n     padding: 1rem;\n-    margin-bottom: 1.200rem;\n     border-radius: 0.313rem;\n     border: none;\n }\n \n"
+                },
+                {
+                    "date": 1707943442944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n     font-size: 1rem;\n     font-weight: 500;\n     letter-spacing: 2px;\n     text-transform: uppercase;\n-    margin-bottom: 1.200rem;\n+    margin-bottom: 0;\n }\n \n /* \n \n"
+                },
+                {
+                    "date": 1707943472994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,12 @@\n     font-size: 1rem;\n     font-weight: 600;\n }\n \n+.form-container input:focus {\n+    \n+}\n+\n .form-container button[type=submit] {\n     border: none;\n     background-color: var(--green);\n     color: var(--white);\n"
+                },
+                {
+                    "date": 1707943495646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n     font-weight: 600;\n }\n \n .form-container input:focus {\n-    \n+    border: ;\n }\n \n .form-container button[type=submit] {\n     border: none;\n"
+                },
+                {
+                    "date": 1707943506044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n     font-weight: 600;\n }\n \n .form-container input:focus {\n-    border: 1.5px ;\n+    border: 1.5px solid ;\n }\n \n .form-container button[type=submit] {\n     border: none;\n"
+                },
+                {
+                    "date": 1707943905366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,301 @@\n+@import url(\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap\");\n+\n+:root {\n+    /* Colors */\n+    /* Primary */\n+    --red: hsl(0, 100%, 74%);\n+    --green: hsl(154, 59%, 51%);\n+    /* Accent */\n+    --blue: hsl(248, 32%, 49%);\n+    /* Neutral */\n+    --dark-blue: hsl(249, 10%, 26%);\n+    --grayish-blue: hsl(246, 25%, 77%);\n+    --white: #fff;\n+    /* Other variables */\n+    --font-size-base: 1rem; /* 16px */\n+    --font-weight-base: 400;\n+}\n+\n+*,\n+*::after,\n+*::before {\n+    margin: 0;\n+    padding: 0;\n+    box-sizing: border-box;\n+}\n+\n+body,\n+html {\n+    font-family: \"Poppins\", sans-serif;\n+    font-size: var(--font-size-base);\n+    font-weight: var(--font-weight-base);\n+}\n+\n+.error-message, .error-icon {\n+    display: none;\n+    color: var(--red);\n+    font-size: 12px;\n+    margin-top: 5px;\n+}\n+\n+main {\n+    min-height: 100vh;\n+    width: 100%;\n+    display: flex;\n+    align-items: center;\n+    justify-content: center;\n+    background: var(--red) url(/images/bg-intro-mobile.png) no-repeat;\n+    padding: 100px 0;\n+}\n+\n+.container {\n+    display: flex;\n+    align-items: center;\n+    justify-content: center;\n+    flex-direction: column;\n+    text-align: center;\n+    padding: 0 30px;\n+    max-width: 1300px;\n+    margin: 0 auto;\n+}\n+\n+.intro-container {\n+    flex: 1;\n+    margin-bottom: 50px;\n+}\n+\n+.intro-container h1 {\n+    font-size: 2.5rem;\n+    line-height: 3rem;\n+    color: #fff;\n+    margin-bottom: 1rem;\n+}\n+\n+.intro-container p {\n+    color: var(--white);\n+    font-size: 1.3rem;\n+    line-height: 1.9rem;\n+}\n+\n+.form-container {\n+    flex: 1;\n+}\n+\n+.form-container .top-box {\n+    background-color: var(--blue);\n+    color: var(--white);\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+    padding: 0.928rem 20%;\n+    border-radius: 0.625rem;\n+    margin-bottom: 2rem;\n+}\n+\n+.form-container .top-box p {\n+    font-size: 1.3rem;\n+    line-height: 2.2rem;\n+}\n+\n+.form-container .top-box p span {\n+    font-weight: 700;\n+}\n+\n+.form-container .form {\n+    background-color: var(--white);\n+    padding: 1.25rem;\n+    border-radius: 0.5rem;\n+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n+}\n+\n+.field-group {\n+    position: relative;\n+    margin-bottom: 25px;\n+}\n+\n+.form-container label {\n+    display: none;\n+}\n+\n+.form-container input,\n+.form-container button[type=submit] {\n+    width: 100%;\n+    height: 60px;\n+    margin-bottom: 0.313rem;\n+    border-radius: 0.625rem;\n+    border: 1px solid var(--grayish-blue);\n+    color: var(--dark-blue);\n+    padding-left: 20px;\n+    outline: none;\n+    /* text-indent: 0.75rem; */\n+    font-size: 1rem;\n+    font-weight: 600;\n+}\n+\n+.form-container input:focus {\n+    border: 1.5px solid var(--dark-blue);\n+}\n+\n+.form-container input::placeholder {\n+    color: var(--dark-blue);\n+    font-size: 1.1rem;\n+    font-weight: 600;\n+}\n+\n+.form-container button[type=submit] {\n+    border: none;\n+    background-color: var(--green);\n+    color: var(--white);\n+    cursor: pointer;\n+    box-shadow: 0px 4px hsl(154, 56%, 44%);\n+    font-size: 1rem;\n+    font-weight: 500;\n+    letter-spacing: 2px;\n+    text-transform: uppercase;\n+    margin-bottom: 0;\n+}\n+\n+.form-container button[type=submit]:hover {\n+    background-color: hsl(154, 80%, 63%);\n+}\n+\n+.form-container .form-footer {\n+    margin-top: 10px;\n+    color: var(--grayish-blue);\n+}\n+\n+.form-container .form-footer a {\n+    color: var(--red);\n+    font-weight: 700;\n+}\n+\n+.error-icon {\n+    display: block;\n+    position: absolute;\n+    top: 0;\n+    right: 20px;\n+}\n+\n+/* \n+\n+.register-form button {\n+    padding: 1rem;\n+    border-radius: 0.313rem;\n+    border: none;\n+}\n+\n+.register-form p {\n+    color: var(--grayish-blue);\n+    font-size: 0.7rem;\n+    font-weight: 700;\n+    letter-spacing: -0.016rem;\n+    text-align: center;\n+    padding: 0.5rem 2.5rem;\n+}\n+\n+a.terms {\n+    color: var(--red);\n+    font-weight: 700;\n+}\n+\n+footer {\n+    margin-top: 20px;\n+}\n+\n+.attribution {\n+    font-size: 11px;\n+    text-align: center;\n+}\n+\n+.attribution a {\n+    color: hsl(228, 45%, 44%);\n+}\n+\n+\n+section {\n+    max-width: 100%;\n+    width: 50%;\n+    display: flex;\n+    flex-direction: column;\n+    align-items: center;\n+    justify-content: center;\n+    padding: 2rem;\n+}\n+\n+\n+input {\n+    border-style: none;\n+    outline: none;\n+}\n+\n+input:focus {\n+    border: 1px solid var(--blue);\n+}\n+\n+.input-field {\n+    border: 1px solid var(--dark-blue);\n+}\n+\n+.input-field.input-error {\n+    border-color: var(--red);\n+}\n+\n+.input-field.input-error::after {\n+    content: \"\";\n+    position: absolute;\n+    top: 50%;\n+    right: 10px;\n+    transform: translateY(-50%);\n+    width: 10px;\n+    height: 10px;\n+    background-image: url(./images/icon-error.svg);\n+    background-size: contain;\n+    background-color: var(--red);\n+    border-radius: 50%;\n+}\n+.error-message.show {\n+    display: block;\n+}\n+\n+button:hover {\n+    background-color: hsl(154, 59%, 68%);\n+    cursor: pointer;\n+} */\n+\n+\n+/* @media (max-width: 650px) {\n+    main {\n+        height: auto;\n+    }\n+    .container {\n+        width: 100%;\n+        flex-direction: column;\n+        padding: 1rem;\n+    }\n+    section {\n+        width: 100%;\n+        padding: 1rem;\n+    }\n+\n+    .learn {\n+        font-size: 1.6rem;\n+        line-height: normal;\n+        margin: 3rem;\n+        padding: 1rem;\n+    }\n+} */\n+/*\n+@media screen and (max-width: 768px) {\n+    .container {\n+        flex-direction: column;\n+        text-align: center;\n+        padding: 3rem;\n+    }\n+\n+    section {\n+        width: 100%;\n+    }\n+\n+    .container-form {\n+        margin-bottom: 5rem;\n+        margin-right: 0;\n+    }\n+} */\n"
+                }
+            ],
+            "date": 1707933909820,
+            "name": "Commit-0",
+            "content": "@import url(\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap\");\n\n:root {\n    /* Colors */\n    /* Primary */\n    --red: hsl(0, 100%, 74%);\n    --green: hsl(154, 59%, 51%);\n    /* Accent */\n    --blue: hsl(248, 32%, 49%);\n    /* Neutral */\n    --dark-blue: hsl(249, 10%, 26%);\n    --grayish-blue: hsl(246, 25%, 77%);\n    --white: #fff;\n    /* Other variables */\n    --font-size-base: 1rem; /* 16px */\n    --font-weight-base: 400;\n}\n\n*,\n*::after,\n*::before {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody,\nhtml {\n    font-family: \"Poppins\", sans-serif;\n    font-size: var(--font-size-base);\n    font-weight: var(--font-weight-base);\n    background: var(--red);\n}\n\nmain {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    background-color: var(--red);\n    background-image: url(\"./images/bg-intro-desktop.png\");\n    background-size: cover;\n    background-position: center;\n    width: 100%;\n}\n\n.container {\n    min-height: 100vh;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: center;\n    padding: 5rem;\n}\n\nsection {\n    max-width: 100%;\n    width: 50%;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    padding: 2rem;\n}\n\n.learn {\n    font-size: 3rem;\n    font-weight: 700;\n    color: #fff;\n    line-height: 3.3rem;\n    padding: 1rem;\n}\n\n.container-info p {\n    color: var(--white);\n    padding: 1rem;\n    font-weight: 700;\n}\n\n.form {\n    background-color: #fff;\n    padding: 1.875rem;\n    border-radius: 0.5rem;\n    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.price {\n    width: 100%;\n    font-size: 1rem;\n    font-weight: 400;\n    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background-color: var(--blue);\n    color: #fff;\n    padding: 1.125rem;\n    border-radius: 0.625rem;\n    margin-bottom: 1.5rem;\n}\n\n.price span {\n    font-weight: 700;\n    margin-right: 0.25rem;\n}\n\ninput[type=\"text\"],\ninput[type=\"email\"],\ninput[type=\"password\"] {\n    width: calc(100% - 1.125rem);\n    padding: 1.125rem;\n    margin-bottom: 1.200rem;\n    border-radius: 5px;\n    border: 1px solid #ccc;\n    color: var(--dark-blue);\n    font-size: 1rem;\n    font-weight: 700;\n    text-indent: 0.75rem;\n}\n\ninput {\n    border-style: none;\n    outline: none;\n}\n\ninput:focus {\n    border: 1px solid var(--blue);\n}\n\n.input-field {\n    border: 1px solid var(--dark-blue);\n}\n\n.input-field.input-error {\n    border-color: var(--red);\n}\n\n.input-field.input-error::after {\n    content: \"\";\n    position: absolute;\n    top: 50%;\n    right: 10px;\n    transform: translateY(-50%);\n    width: 10px;\n    height: 10px;\n    background-image: url(./images/icon-error.svg);\n    background-size: contain;\n    background-color: var(--red);\n    border-radius: 50%;\n}\n\n.error-message {\n    display: none;\n    color: var(--red);\n    font-size: 12px;\n    margin-top: 5px;\n}\n\n.error-message.show {\n    display: block;\n}\n\nbutton {\n    background-color: var(--green);\n    color: #fff;\n    cursor: pointer;\n    width: calc(100% - 1.25rem);\n    padding: 1.125rem;\n    margin-bottom: 1.200rem;\n    border-radius: 5px;\n    border: 1px solid #ccc;\n    font-size: 1rem;\n    font-weight: 700;\n    text-transform: uppercase;\n}\n\nbutton:hover {\n    background-color: hsl(154, 59%, 68%);\n    cursor: pointer;\n}\n\nform p {\n    color: var(--grayish-blue);\n    font-size: 0.7rem;\n    font-weight: 700;\n    letter-spacing: -0.016rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.terms {\n    color: var(--red);\n    padding-left: 4px;\n    font-weight: 700;\n}\n\nfooter {\n    margin-top: 20px;\n    text-align: center;\n}\n\n.attribution {\n    font-size: 11px;\n    text-align: center;\n}\n\n.attribution a {\n    color: hsl(228, 45%, 44%);\n}\n\n/* @media (max-width: 650px) {\n    main {\n        height: auto;\n    }\n    .container {\n        width: 100%;\n        flex-direction: column;\n        padding: 1rem;\n    }\n    section {\n        width: 100%;\n        padding: 1rem;\n    }\n\n    .learn {\n        font-size: 1.6rem;\n        line-height: normal;\n        margin: 3rem;\n        padding: 1rem;\n    }\n} */\n\n@media screen and (max-width: 768px) {\n    .container {\n        flex-direction: column;\n        text-align: center;\n        padding: 3rem;\n    }\n\n    section {\n        width: 100%;\n    }\n\n    .container-form {\n        margin-bottom: 5rem;\n        margin-right: 0;\n    }\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    /* Colors */
+    /* Primary */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    /* Accent */
+    --blue: hsl(248, 32%, 49%);
+    /* Neutral */
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --white: #fff;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../images/bg-intro-mobile.png");
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 375px;
+    max-height: 1000px;
+    padding: 1.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+header h1 {
+    padding: 1.1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+}
+
+header p {
+    padding: 0.2rem 0;
+    line-height: 1.6rem;
+}
+
+.section-price {
+    background-color: var(--blue);
+    border-radius: 0.7rem;
+    padding: 1.1rem 4rem;
+    box-shadow: 0px 0.5rem hsla(249, 10%, 26%, 0.2);
+    display: block;
+    text-align: center;
+    margin: 0.7rem 0;
+}
+
+.section-price span {
+    letter-spacing: -0.015em;
+    line-height: 1.7;
+}
+
+section form {
+    background-color: var(--white);
+    padding: 1.4rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.5rem hsla(249, 10%, 26%, 0.2);
+    margin: 1.5rem 0;
+}
+
+section form div {
+    position: relative;
+    padding: 0 1rem;
+}
+
+section form input {
+    width: 100%;
+    color: var(--dark-blue);
+    caret-color: var(--blue);
+    padding: 1.175rem;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 0.313rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+}
+
+section form div input::placeholder {
+    color: var(--dark-blue);
+    letter-spacing: 0.02em;
+}
+
+section form div input:focus {
+    outline: none;
+    border-color: var(--blue);
+    font-weight: 700;
+}
+
+button {
+    box-sizing: content-box;
+    width: 77%;
+    padding: 1.2rem;
+    background-color: var(--green);
+    border: 0;
+    border-radius: 0.313rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 1rem;
+    box-shadow: inset 0px 1px 3px rgb(62 60 73 / 21%), inset 0px -3px 5px rgb(62 60 73 / 21%);
+    transition: all 0.3s ease-in-out;
+}
+
+section form button:hover {
+    background: hsla(154, 59%, 51%, 80%);
+}
+
+.terms {
+    color: var(--grayish-blue);
+    padding: 0 2rem;
+    margin-top: 0.5rem;
+    line-height: 1.3rem;
+}
+
+section form div.terms span {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+section form div.terms span b {
+    font-weight: 600;
+    color: var(--red);
+}
+
+.error-icon, .error-text {
+    display: none;
+}
+
+.error-icon {
+    position: absolute;
+    top: 16%;
+    right: 1.6rem;
+}
+
+.field-group.error .error-text,
+.field-group.error .error-icon {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: var(--red);
+}
+
+.field-group.error input {
+    border: 2px solid var(--red);
+    padding-bottom: 1rem;
+    color: var(--red);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: var(--green);
+    margin: 50% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: var(--white);
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url("../images/bg-intro-desktop.png");
+        max-height: 100vh;
+    }
+
+    main {
+        min-width: 1440px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        max-width: 600px;
+        text-align: left;
+        padding: 1.7rem;
+    }
+
+    header h1 {
+        font-size: 3.06rem;
+        letter-spacing: normal;
+        line-height: 3.5rem;
+        padding: 1.1rem;
+        margin-top: 0.7rem;
+    }
+
+    header p {
+        padding: 0.5rem 1.1rem;
+    }
+
+    section {
+        min-width: 600px;
+        padding: 4rem 2.8rem 2.2rem 1rem;
+    }
+
+    section form {
+        padding: 1.5rem;
+    }
+
+    section form div {
+        margin: 1rem 0;
+    }
+
+    section form input {
+        padding: 1.2rem 1.9rem;
+        margin-bottom: 0.2rem;
+    }
+
+    section form button {
+        width: 86%;
+        margin-bottom: 0.2rem;
+    }
+
+    .terms {
+        margin-bottom: 1.2rem;
+    }
+
+    .error-icon {
+        top: 17%;
+        right: 2.7rem;
+    }
+
+    .error-text {
+        padding-bottom: 0.3rem;
+    }
+
+    .modal-content {
+        margin: 15% auto;
+    }
+
+}
