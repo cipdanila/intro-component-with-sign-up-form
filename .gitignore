@@ -21,4 +21,4 @@
 temp/
 
 # ignore the directory named node_modules
-node_modules/
+node_modules/node_modules/
