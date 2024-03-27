@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>Intro component with sign up form</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Learn to code by watching others</h1>
+                <p>
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                    understanding how developers think is invaluable.
+                </p>
+            </header>
+            <section>
+                <dialog class="modal">
+                    <div class="modal-content">
+                        <button class="close" onclick="closeModal()" role="button">&times;</button>
+                        <p class="modal-message"></p>
+                    </div>
+                </dialog>
+                <div class="section-price">
+                    <span><b>Try it free 7 days</b> then $20/mo. thereafter</span>
+                </div>
+                <form id="signupForm" action="/" method="POST" novalidate>
+                    <div class="field-group">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+                        <img src="/images/icon-error.svg" alt="error-img" aria-hidden="true" class="error-icon" />
+                        <img src="/images/icon-success.svg" alt="success-img" aria-hidden="true" class="success-icon" />
+                        <span class="error-text"></span>
+                    </div>
+                    <div class="field-group">
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+                        <img src="/images/icon-error.svg" alt="error-img" aria-hidden="true" class="error-icon" />
+                        <img src="/images/icon-success.svg" alt="success-img" aria-hidden="true" class="success-icon" />
+                        <span class="error-text"></span>
+                    </div>
+                    <div class="field-group">
+                        <input type="email" name="emailAddress" id="email" placeholder="Email Address" />
+                        <img src="/images/icon-error.svg" alt="error-img" aria-hidden="true" class="error-icon" />
+                        <img src="/images/icon-success.svg" alt="success-img" aria-hidden="true" class="success-icon" />
+                        <span class="error-text"></span>
+                    </div>
+                    <div class="field-group">
+                        <input type="password" name="password" id="password" placeholder="Password" />
+                        <img src="/images/icon-error.svg" alt="error-img" aria-hidden="true" class="error-icon" />
+                        <img src="/images/icon-success.svg" alt="success-img" aria-hidden="true" class="success-icon" />
+                        <span class="error-text"></span>
+                    </div>
+                    <button type="submit">Claim your free trial</button>
+                    <div class="terms">
+                        <span>By clicking the button, you are agreeing to our <b>Terms and Services</b></span>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1/hub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Frontend Mentor</a
+                >. Coded by <a href="https://github.com/cipdanila" target="_blank" rel="noopener noreferrer">Ciprian Danila</a>.
+            </p>
+        </footer>
+        <script src="/js/modal.js"></script>
+        <script src="/js/form.js"></script>
+    </body>
+</html>

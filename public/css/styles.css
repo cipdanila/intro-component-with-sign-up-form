@@ -150,11 +150,11 @@ section form div.terms span b {
     color: var(--red);
 }
 
-.error-icon, .error-text {
+.error-icon, .error-text, .success-icon {
     display: none;
 }
 
-.error-icon {
+.error-icon, .success-icon {
     position: absolute;
     top: 16%;
     right: 1.6rem;
@@ -170,10 +170,25 @@ section form div.terms span b {
     color: var(--red);
 }
 
+.field-group.success .success-icon {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: var(--green);
+}
+
 .field-group.error input {
     border: 2px solid var(--red);
     padding-bottom: 1rem;
     color: var(--red);
+}
+
+.field-group.success input {
+    border: 2px solid var(--green);
+    padding-bottom: 1rem;
+    color: var(--green);
 }
 
 .modal {
@@ -191,24 +206,37 @@ section form div.terms span b {
 .modal-content {
     background-color: var(--green);
     margin: 50% auto;
-    padding: 20px;
+    padding: 1.5rem;
     border: 1px solid #888;
     width: 80%;
+}
+
+.modal-message {
+    width: 75%;
+    text-align: center;
 }
 
 .close {
     color: var(--white);
     float: right;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
+    width: 3%;
+    padding: 0.5em;
+    margin: 0 auto;
+    position: relative;
+    top: 1.5rem;
+    right: 1rem;
+    transform: translate(50%, -50%);
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
+    color: var(--red);
     cursor: pointer;
-    font-size: 28px;
+    font-size: 1.2rem;
+    width: 7%;
+    padding: 0.5em;
 }
 
 .attribution {
@@ -280,7 +308,7 @@ section form div.terms span b {
         margin-bottom: 1.2rem;
     }
 
-    .error-icon {
+    .error-icon, .success-icon {
         top: 17%;
         right: 2.7rem;
     }
@@ -293,4 +321,15 @@ section form div.terms span b {
         margin: 15% auto;
     }
 
+    .close {
+        top: 1rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (min-width: 582px) {
+    .close {
+        top: 1rem;
+        right: 2rem;
+    }
 }
